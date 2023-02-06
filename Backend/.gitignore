@@ -1,0 +1,31 @@
+# Node
+node_modules/
+
+# Builds
+dist/
+dist-ssr/
+*.local
+
+# Editor directories and files
+.vscode/*
+*.DS_Store
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Other
+*.env
+*.css.map
