@@ -29,3 +29,4 @@ lerna-debug.log*
 # Other
 *.env
 *.css.map
+exampleData.json

@@ -33,6 +33,12 @@ p {
 }
 
 .body-wrapper {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto;
+}
+
+.title-wrapper {
     padding-top: 2rem;
     padding-left: 5rem;
 
@@ -43,10 +49,18 @@ p {
     }
 }
 
+.link-wrapper {
+    padding-left: 5rem;
+
+    ul, li {
+        padding-left: 1rem;
+    }
+}
+
 .footer-wrapper {
     display: grid;
     grid-template-columns: auto;
-    position: absolute;
+    // position: absolute;
     gap: 0.2rem;
     bottom: 0;
     right: 0;

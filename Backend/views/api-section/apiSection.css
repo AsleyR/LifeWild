@@ -29,19 +29,31 @@ p {
 }
 
 .body-wrapper {
+  display: grid;
+  position: relative;
+  grid-template-columns: auto;
+}
+
+.title-wrapper {
   padding-top: 2rem;
   padding-left: 5rem;
 }
-.body-wrapper h1 {
+.title-wrapper h1 {
   margin: 0;
   font-size: 1.8rem;
   padding-bottom: 0.2rem;
 }
 
+.link-wrapper {
+  padding-left: 5rem;
+}
+.link-wrapper ul, .link-wrapper li {
+  padding-left: 1rem;
+}
+
 .footer-wrapper {
   display: grid;
   grid-template-columns: auto;
-  position: absolute;
   gap: 0.2rem;
   bottom: 0;
   right: 0;

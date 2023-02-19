@@ -1,3 +1,4 @@
+// Fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
 
 body {
@@ -9,6 +10,49 @@ body {
 p {
     padding: 0;
     margin: 0;
+}
+
+.area-container {
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+
+}
+@media only screen and (max-width: 1000px) {
+    .area-container {
+        display: grid;
+        grid: auto-flow / 1fr 0px;
+    }
+
+    .area-2 {
+        display: none;
+    }
+}
+
+.area-1 {
+    // border: 1px solid violet;
+}
+
+.area-2 {
+    display: flex;
+    justify-content: center;
+
+    .animal-img {
+        width: 28rem;
+        height: auto;
+        border-radius: 1%;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    }
+
+    @media only screen and (max-width: 1000px) {
+
+        .animal-img {
+            display: none;
+        }
+    }
 }
 
 .header-container {
@@ -33,13 +77,17 @@ p {
 }
 
 .body-wrapper {
-    padding-top: 2rem;
-    padding-left: 5rem;
 
     h1 {
         margin: 0;
         font-size: 1.8rem;
         padding-bottom: 0.2rem;
+    }
+
+    .documentation-wrapper {
+        h1 {
+            padding-top: 1rem;
+        }
     }
 }
 
