@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  box-sizing: border-box;
+}
+
+.bg-grid-gradient {
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(245, 245, 245, 0.653646) 49.48%, rgba(207, 207, 207, 0.3) 100%), #F7F4F4;
+  background-image: url("/images/grid.svg");
+}
+
+.bg-gradient {
+ background: rgb(255,255,255);
+  background: -moz-linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+  background: -webkit-linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+  background: linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ececec",GradientType=1); 
+}
+
+.bg-wave {
+  background-image: url('/images/bg-wave.svg');
+}
+
+.bottom-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.bottom-wave svg {
+    position: relative;
+    display: block;
+    width: calc(133% + 1.3px);
+    height: 122px;
+}
+
+.bottom-wave .shape-fill {
+    fill: #40632F;
+}
+
+.bottom-wave-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.bottom-wave-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+    transform: rotateY(180deg);
+}
+
+.bottom-wave-2 .shape-fill {
+    fill: #55853E;
+}
