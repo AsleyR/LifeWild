@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+type LifedatasClassification {
+  class      String
+  domain     String
+  family     String
+  genus      String
+  infraOrder String
+  kingdom    String
+  order      String
+  phylum     String
+  species    String
+  subClass   String
+  subFamily  String
+  subOrder   String
+  subPhylum  String
+  subSpecies String
+}
+
+type ServerusersPermissions {
+  create Boolean
+  delete Boolean
+  update Boolean
+}
+
+model LifeWild {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
+
+model lifedatas {
+  id                 String                  @id @default(auto()) @map("_id") @db.ObjectId
+  v                  Int                     @map("__v")
+  about              String[]
+  binomialName       String
+  classification     LifedatasClassification
+  conservationStatus String
+  otherNames         String[]
+  referencePhoto     String
+  references         String[]
+  vernacularName     String
+}
+
+model serverusers {
+  id             String                 @id @default(auto()) @map("_id") @db.ObjectId
+  v              Int                    @map("__v")
+  dateOfCreation DateTime               @db.Date
+  password       String
+  permissions    ServerusersPermissions
+  username       String
+}
