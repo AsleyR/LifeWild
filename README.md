@@ -1,5 +1,5 @@
 <div align='center'>
-<img src="./ProjectMedia/LifeWild-Logo.svg" width=100>
+<img src="./project/LifeWild-Logo.svg" width=100>
 <h1>LifeWild</h1>
 <p>Earth's wildlife collection.</p>
 <hr>
