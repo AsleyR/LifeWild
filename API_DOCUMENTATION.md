@@ -1,0 +1,3 @@
+# LifeWild API Documentation
+
+Pending.
