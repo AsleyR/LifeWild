@@ -1,4 +1,4 @@
-import Navbar from './(component)/navbar/Navbar'
+import Navbar from './(components)/navbar/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} grid grid-rows-[min-content_auto_min-content] h-screen relative`}>
+      <body className={`${inter.className} grid grid-rows-[min-content_auto_min-content] h-full bg-gradient`}>
         <Navbar />
         <div className="">
           {children}
