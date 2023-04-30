@@ -17,7 +17,7 @@ const LoadingResultCards = ({ ammount }: { ammount?: number }) => {
     ammount = ammount || 3 // Defaults to three if undefined
 
     return (
-        <div className="flex flex-col gap-3 mt-3">
+        <div className="flex flex-col gap-3 mt-3 w-min-0 w-full">
             {
                 generateLoadingCards(ammount)
             }

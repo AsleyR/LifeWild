@@ -8,9 +8,9 @@ export default function ResultCard({ data }: { data: ResultCardType }) {
     return (
         <Link key={`${data.title}-link`} href={`/article/${data.cardId}`}
             className={`
-        grid grid-cols-[auto_auto] gap-12 bg-white drop-shadow rounded-md 
+        grid grid-cols-[auto_auto] gap-2 md:gap-12 bg-white drop-shadow rounded-md 
         cursor-pointer hover:scale-105 active:scale-95 transition-all
-        overlow-hidden h-[176px]
+        overlow-hidden h-[176px] min-w-0
         `}>
             <div className="pl-6 py-6">
                 <h1 className="font-bold text-2xl">{data.title}</h1>

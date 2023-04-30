@@ -30,7 +30,7 @@ const SearchBar = ({ value, type, placeholder }: { value?: string, type: "normal
 
     return (
         <form method="GET" onSubmit={(e) => { e.preventDefault(); router.push(`/search?q=${input.q}`) }}
-            className={`flex gap-4 px-2 md:px-4 align-middle items-center rounded-md bg-white drop-shadow`}>
+            className={`flex gap-4 px-4 align-middle items-center rounded-md bg-white drop-shadow`}>
             <label className="flex w-min">
                 <FontAwesomeIcon className="text-gray1" icon={faSearch} />
             </label>
@@ -44,10 +44,11 @@ const SearchBar = ({ value, type, placeholder }: { value?: string, type: "normal
                 onChange={handleChange}
                 value={input.q}
                 id="search"
+                aria-label="Search bar input"
             />
-            <button onClick={() => deleteInput()} type={'button'}
+            <button onClick={() => deleteInput()} type={'button'} aria-label="Delete button"
                 className={`${input.q.length === 0 ? "opacity-0 cursor-default" : "opacity-100 cursor-pointer"} flex`}>
-                <FontAwesomeIcon className={`cursor-pointer text-sm md:text-lg`} icon={faXmark} />
+                <FontAwesomeIcon className={`text-lg`} icon={faXmark} />
             </button>
         </form>
     )

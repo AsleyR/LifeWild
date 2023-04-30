@@ -8,7 +8,7 @@ const ResultCardDescription = ({ description }: { description: string }) => {
     }
 
     return (
-        <div className="w-full">
+        <div className="w-full min-w-0">
             <p key={`${description}-p`} className="hidden md:block text-sm text-elipsis overflow-hidden text-black/60">{parseText(description, 150)}</p>
             <p key={`${description}-p`} className="block md:hidden text-sm text-elipsis overflow-hidden text-black/60">{parseText(description, 50)}</p>
         </div>

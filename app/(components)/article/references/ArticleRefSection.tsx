@@ -15,7 +15,7 @@ const ArticleRefSection = ({ title, imagePath, options = { collapsable: false } 
     const textSize = options.textSize || "text-2xl"
 
     return (
-        <div onClick={() => setOpenReferences(!openReferences)}
+        <div onClick={() => setOpenReferences(!openReferences)} tabIndex={0}
             className={`
         grid grid-cols-[min-content_auto_min-content] 
         ${justifyOption === "left" ? "justify-left" : "justify-center"}  

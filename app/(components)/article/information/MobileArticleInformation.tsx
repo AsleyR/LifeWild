@@ -1,7 +1,7 @@
 import { LifeWildType } from "@/app/libs/types/LifeWild.types"
 import ArticleInformation from "./ArticleInformationContainer"
 import ArticleInformationSection from "./ArticleInformation"
-import ContentSeparator from "@/app/(component)/ContentSeparator"
+import ContentSeparator from "@/app/(components)/ContentSeparator"
 import ArticleTableContainer from "../table/ArticleTableContainer"
 import ArticleReferences from "../references/ArticleReferences"
 
