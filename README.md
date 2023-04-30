@@ -8,6 +8,7 @@
 <h2>Table of Contents</h2>
 
 - [About](#about)
+  - [Technologies](#technologies)
   - [Hosting](#hosting)
   - [API Documentation](#api-documentation)
 - [Contributions](#contributions)
@@ -18,11 +19,13 @@
 
 An online platform that allows users to search for animal entries and learn more about them. With a comprehensive database of various species, users can learn about their scientific classification, species name, conservation status, and more.
 
-Made with Next 13, Typescript, Tailwind CSS, Prisma, MongoDB and Dockerized.
+### Technologies
+
+LifeWild is a full stack project made using [Next 13](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), [Prisma](https://www.prisma.io/), and [MongoDB](https://www.mongodb.com/).
 
 ### Hosting
 
-This project is hosted on [Render](https://render.com). You can visit it at [https://lifewild.onrender.com](https://lifewild.onrender.com).
+This project is hosted on [vercel](https://vercel.com). You can visit it at [https://lifewild.vercel.app](https://lifewild.vercel.app).
 
 ### API Documentation
 
