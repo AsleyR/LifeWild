@@ -12,5 +12,9 @@ export interface getLifeWildByBinomialNameProps extends getLifeWildBase {
     quantity?: requestQuantity
 }
 
+export interface getLifeWildByConservationStatusProps extends getLifeWildBase {
+    quantity?: requestQuantity
+}
+
 export interface getLifeWildByIdProps extends getLifeWildBase {
 }
