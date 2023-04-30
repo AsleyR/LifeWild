@@ -1,14 +1,14 @@
-import ContentSeparator from "@/app/(component)/ContentSeparator"
+import ContentSeparator from "@/app/(components)/ContentSeparator"
 import { LifeWildType } from "@/app/libs/types/LifeWild.types"
-import ArticleReferences from "../../(component)/article/references/ArticleReferences"
-import ArticleDescription from "../../(component)/article/ArticleDescription"
-import ArticleInformation from "../../(component)/article/information/ArticleInformation"
-import Footer from "@/app/(component)/Footer"
+import ArticleReferences from "../../(components)/article/references/ArticleReferences"
+import ArticleDescription from "../../(components)/article/ArticleDescription"
+import ArticleInformation from "../../(components)/article/information/ArticleInformation"
+import Footer from "@/app/(components)/Footer"
 import getLifeWildById from "@/app/actions/getLifeWildById"
-import ArticleInformationContainer from "@/app/(component)/article/information/ArticleInformationContainer"
-import ArticleTableContainer from "@/app/(component)/article/table/ArticleTableContainer"
-import ArticleImage from "@/app/(component)/article/ArticleImage"
-import MobileArticleInformation from "@/app/(component)/article/information/MobileArticleInformation"
+import ArticleInformationContainer from "@/app/(components)/article/information/ArticleInformationContainer"
+import ArticleTableContainer from "@/app/(components)/article/table/ArticleTableContainer"
+import ArticleImage from "@/app/(components)/article/ArticleImage"
+import MobileArticleInformation from "@/app/(components)/article/information/MobileArticleInformation"
 
 type MetadataProps = {
     params: { id: string }
@@ -76,9 +76,9 @@ const ArtilcePage = async ({ params }: { params: { id: string } }) => {
     }
 
     return (
-        <div className="relative w-full h-full pt-[4rem] py-[6rem] px-mobilex2 md:px-mdx lg:px-lgx transition-all bg-gradient">
+        <div className="relative w-full h-full pt-[4rem] py-[6rem] px-mobilex2 md:px-mdx lg:px-lgx transition-all">
             <Article article={LifeWild} />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
