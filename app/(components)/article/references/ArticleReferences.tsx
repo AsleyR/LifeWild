@@ -10,18 +10,30 @@ import { ArticleSectionProps } from "../ArticleSection"
 
 export const OpenReferencesContext = createContext<OpenReferencesType | null>(null)
 
-const SpliceLinkInContent = (content: string): JSX.Element => {
+const spliceLinkInContent = (content: string) => {
     const indexOfLink = content.indexOf('http')
     const referenceLink = content.slice(indexOfLink) // Find position of the first instance of the string 'http'
     let reference = content.split(referenceLink)[0]
-    return (
-        <p key={`${content}-p`} className="">{reference} <Link className="text-blue-500 hover:underline" target={'_blank'} href={referenceLink}>{referenceLink}</Link></p>
-    )
+
+    return {
+        referenceLink: referenceLink,
+        reference: reference
+    }
 }
 
 const ArticleReferences = ({ references, svgPath, options = { "textSize": "text-2xl" } }: { references: LifeWildType['references'], svgPath: string, options?: ArticleSectionProps['options'] }) => {
     const parseRefs = (refs: string[]) => {
-        return refs.map((ref) => SpliceLinkInContent(ref))
+        return refs.map((ref, index: number) => {
+            const refsLinks = spliceLinkInContent(ref)
+            return (
+                <p key={`${index}-p`} className="">
+                    {refsLinks.reference}
+                    <Link className="text-blue-500 hover:underline break-all" target={'_blank'} href={refsLinks.referenceLink}>
+                        {refsLinks.referenceLink}
+                    </Link>
+                </p>
+            )
+        })
     }
 
     const content = parseRefs(references)
